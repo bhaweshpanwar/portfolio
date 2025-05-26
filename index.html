@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bhawesh Panwar - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .text-balance {
+          text-wrap: balance;
+        }
+      }
+
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: rgba(156, 163, 175, 0.5);
+        border-radius: 4px;
+      }
+      .dark ::-webkit-scrollbar-thumb {
+        background-color: rgba(75, 85, 99, 0.5);
+      }
+    </style>
+    <script>
+      (function () {
+        try {
+          const storedTheme = localStorage.getItem('theme');
+          if (storedTheme === 'dark') {
+            document.documentElement.classList.add('dark');
+          } else if (storedTheme === 'light') {
+            document.documentElement.classList.remove('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {
+          console.error('Error setting initial theme:', e);
+
+          document.documentElement.classList.remove('dark');
+        }
+      })();
+    </script>
+  </head>
+  <body
+    class="min-h-screen bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100 font-sans antialiased"
+  >
+    <div class="max-w-2xl mx-auto py-12 sm:py-24 px-6">
+      <main class="flex flex-col space-y-16">
+        <!-- Hero Section -->
+        <section id="hero">
+          <div class="w-full space-y-8">
+            <div
+              class="flex flex-col-reverse sm:flex-row items-start sm:items-center justify-between gap-6"
+            >
+              <div class="flex-col flex flex-1 space-y-1.5">
+                <h1
+                  class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none text-balance"
+                >
+                  Hi, I'm Bhawesh Panwar 👋
+                </h1>
+                <p
+                  class="max-w-[600px] text-neutral-600 dark:text-neutral-400 md:text-xl text-balance"
+                >
+                  I don’t just write code—I solve problems, one bug at a time.
+                  Full-stack by choice, backend by heart, with a soft spot for
+                  clean Figma designs. Always building, always learning.
+                </p>
+              </div>
+              <div
+                class="relative flex shrink-0 overflow-hidden rounded-full size-44 border border-neutral-200 dark:border-neutral-700"
+              >
+                <img
+                  class="aspect-square h-full w-full"
+                  alt="bhaweshpanwar
+                  "
+                  src="./assets/me.jpg"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="space-y-3">
+          <h2 class="text-xl font-bold text-neutral-800 dark:text-neutral-200">
+            About
+          </h2>
+          <div
+            class="prose prose-neutral dark:prose-invert max-w-full text-sm text-neutral-600 dark:text-neutral-400"
+          >
+            <p>
+              Not the kind of person who grew up writing code at 10. I was more
+              into shooting hoops, smashing ping-pong balls, flipping through
+              random books, and vibing to good music. But somewhere between
+              school (Chhatrapati Shivaji Public School, if you're curious) and
+              my BCA journey at DAVV, I stumbled into the world of software—and
+              it just clicked.
+            </p>
+            <p>
+              Now, I spend most of my time building things that actually work
+              (and break sometimes—learning, right?). I enjoy making full-stack
+              apps, improving performance, and crafting tools that solve real
+              problems. From designing a smooth tour booking system to
+              integrating AI in chatbots, I'm constantly figuring out how to
+              make tech more human.
+            </p>
+            <p>
+              I’m not trying to reinvent the wheel. Just trying to make it roll
+              a little smoother.
+            </p>
+          </div>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section id="work" class="space-y-3">
+          <h2 class="text-xl font-bold text-neutral-800 dark:text-neutral-200">
+            Work Experience
+          </h2>
+          <div class="flex flex-col gap-y-4">
+            <!-- Work Item 1 -->
+            <a
+              class="block group"
+              href="https://positiveway.in"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                class="rounded-lg bg-neutral-50 dark:bg-neutral-800 p-4 border border-neutral-200 dark:border-neutral-700 transition-all group-hover:shadow-md"
+              >
+                <div class="flex items-start gap-4">
+                  <span
+                    class="relative flex shrink-0 overflow-hidden rounded-full border border-neutral-200 dark:border-neutral-700 size-12 bg-neutral-100 dark:bg-neutral-700"
+                  >
+                    <img
+                      class="aspect-square h-full w-full"
+                      src="https://positiveway.in/assets/ps_logo-DdhA5cYy.png"
+                      alt="Company 1"
+                    />
+                  </span>
+                  <div class="flex-grow">
+                    <div
+                      class="flex items-center justify-between gap-x-2 text-base"
+                    >
+                      <h3
+                        class="inline-flex items-center font-semibold leading-none text-sm sm:text-base text-neutral-900 dark:text-neutral-100"
+                      >
+                        PositiveWay Solutions Private Limited
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="ml-1 size-4 translate-x-0 transform opacity-0 transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100"
+                        >
+                          <path d="m9 18 6-6-6-6"></path>
+                        </svg>
+                      </h3>
+                      <div
+                        class="text-xs sm:text-sm text-neutral-500 dark:text-neutral-400"
+                      >
+                        16/09/2024 - 16/10/2024
+                      </div>
+                    </div>
+                    <div
+                      class="font-sans text-xs text-neutral-600 dark:text-neutral-400"
+                    >
+                      Web Developer Intern
+                    </div>
+                    <p
+                      class="mt-2 text-xs sm:text-sm text-neutral-500 dark:text-neutral-500"
+                    >
+                      Designed, built, and deployed a full website from
+                      scratch—React frontend, backend APIs, and cPanel
+                      deployment. Cut load time by 40%, improved UX flow, and
+                      shipped live updates based on real-time client feedback.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="space-y-3">
+          <h2 class="text-xl font-bold text-neutral-800 dark:text-neutral-200">
+            Education
+          </h2>
+          <div class="flex flex-col gap-y-4">
+            <!-- BCA Education -->
+            <a class="block group" rel="noopener noreferrer">
+              <div
+                class="rounded-lg bg-neutral-50 dark:bg-neutral-800 p-4 border border-neutral-200 dark:border-neutral-700 transition-all group-hover:shadow-md"
+              >
+                <div class="flex items-start gap-4">
+                  <span
+                    class="relative flex shrink-0 overflow-hidden rounded-full border border-neutral-200 dark:border-neutral-700 size-12 bg-neutral-100 dark:bg-neutral-700"
+                  >
+                    <img
+                      class="aspect-square h-full w-full"
+                      src="https://upload.wikimedia.org/wikipedia/en/a/ae/Devi_Ahilya_Vishwavidyalaya_Logo.png"
+                      alt="Company 1"
+                    />
+                  </span>
+                  <div class="flex-grow">
+                    <div
+                      class="flex items-center justify-between gap-x-2 text-base"
+                    >
+                      <h3
+                        class="inline-flex items-center font-semibold leading-none text-sm sm:text-base text-neutral-900 dark:text-neutral-100"
+                      >
+                        Devi Ahilya Vishwavidyalaya – SCSIT
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="ml-1 size-4 translate-x-0 transform opacity-0 transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100"
+                        >
+                          <path d="m9 18 6-6-6-6"></path>
+                        </svg>
+                      </h3>
+                      <div
+                        class="text-xs sm:text-sm text-neutral-500 dark:text-neutral-400"
+                      >
+                        2022 – 2025
+                      </div>
+                    </div>
+                    <div
+                      class="font-sans text-xs text-neutral-600 dark:text-neutral-400"
+                    >
+                      Bachelor of Computer Applications (BCA) – CGPA: 7.65
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- School Education -->
+            <a class="block group">
+              <div
+                class="rounded-lg bg-neutral-50 dark:bg-neutral-800 p-4 border border-neutral-200 dark:border-neutral-700 transition-all group-hover:shadow-md"
+              >
+                <div class="flex items-start gap-4">
+                  <span
+                    class="relative flex shrink-0 overflow-hidden rounded-full border border-neutral-200 dark:border-neutral-700 size-12 bg-neutral-100 dark:bg-neutral-700"
+                  >
+                    <img
+                      class="aspect-square h-full w-full"
+                      src="https://chhatrapatishivajipublicschool.com/wp-content/uploads/2018/12/logo1.gif"
+                      alt="Company 1"
+                    />
+                  </span>
+                  <div class="flex-grow">
+                    <div
+                      class="flex items-center justify-between gap-x-2 text-base"
+                    >
+                      <h3
+                        class="inline-flex items-center font-semibold leading-none text-sm sm:text-base text-neutral-900 dark:text-neutral-100"
+                      >
+                        Chhatrapati Shivaji Public School
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="ml-1 size-4 translate-x-0 transform opacity-0 transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100"
+                        >
+                          <path d="m9 18 6-6-6-6"></path>
+                        </svg>
+                      </h3>
+                      <div
+                        class="text-xs sm:text-sm text-neutral-500 dark:text-neutral-400"
+                      >
+                        2021 – 2022
+                      </div>
+                    </div>
+                    <div
+                      class="font-sans text-xs text-neutral-600 dark:text-neutral-400"
+                    >
+                      CBSE – Class 12 (78%)
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="space-y-3">
+          <h2 class="text-xl font-bold text-neutral-800 dark:text-neutral-200">
+            Skills
+          </h2>
+          <div class="flex flex-wrap gap-1.5">
+            <span
+              class="inline-flex items-center rounded-md border border-transparent bg-neutral-900 dark:bg-neutral-50 px-2.5 py-0.5 text-xs font-semibold text-neutral-50 dark:text-neutral-900 shadow hover:bg-neutral-700 dark:hover:bg-neutral-200 transition-colors"
+              >C++</span
+            >
+            <span
+              class="inline-flex items-center rounded-md border border-transparent bg-neutral-900 dark:bg-neutral-50 px-2.5 py-0.5 text-xs font-semibold text-neutral-50 dark:text-neutral-900 shadow hover:bg-neutral-700 dark:hover:bg-neutral-200 transition-colors"
+              >Java</span
+            >
+            <span
+              class="inline-flex items-center rounded-md border border-transparent bg-neutral-900 dark:bg-neutral-50 px-2.5 py-0.5 text-xs font-semibold text-neutral-50 dark:text-neutral-900 shadow hover:bg-neutral-700 dark:hover:bg-neutral-200 transition-colors"
+              >JavaScript</span
+            >
+            <span
+              class="inline-flex items-center rounded-md border border-transparent bg-neutral-900 dark:bg-neutral-50 px-2.5 py-0.5 text-xs font-semibold text-neutral-50 dark:text-neutral-900 shadow hover:bg-neutral-700 dark:hover:bg-neutral-200 transition-colors"
+              >React</span
+            >
+            <span
+              class="inline-flex items-center rounded-md border border-transparent bg-neutral-900 dark:bg-neutral-50 px-2.5 py-0.5 text-xs font-semibold text-neutral-50 dark:text-neutral-900 shadow hover:bg-neutral-700 dark:hover:bg-neutral-200 transition-colors"
+              >Node.js</span
+            >
+            <span
+              class="inline-flex items-center rounded-md border border-transparent bg-neutral-900 dark:bg-neutral-50 px-2.5 py-0.5 text-xs font-semibold text-neutral-50 dark:text-neutral-900 shadow hover:bg-neutral-700 dark:hover:bg-neutral-200 transition-colors"
+              >Tailwind CSS</span
+            >
+            <span
+              class="inline-flex items-center rounded-md border border-transparent bg-neutral-900 dark:bg-neutral-50 px-2.5 py-0.5 text-xs font-semibold text-neutral-50 dark:text-neutral-900 shadow hover:bg-neutral-700 dark:hover:bg-neutral-200 transition-colors"
+              >Python</span
+            >
+            <span
+              class="inline-flex items-center rounded-md border border-transparent bg-neutral-900 dark:bg-neutral-50 px-2.5 py-0.5 text-xs font-semibold text-neutral-50 dark:text-neutral-900 shadow hover:bg-neutral-700 dark:hover:bg-neutral-200 transition-colors"
+              >D3.js</span
+            >
+            <span
+              class="inline-flex items-center rounded-md border border-transparent bg-neutral-900 dark:bg-neutral-50 px-2.5 py-0.5 text-xs font-semibold text-neutral-50 dark:text-neutral-900 shadow hover:bg-neutral-700 dark:hover:bg-neutral-200 transition-colors"
+              >HTML & CSS</span
+            >
+            <span
+              class="inline-flex items-center rounded-md border border-transparent bg-neutral-900 dark:bg-neutral-50 px-2.5 py-0.5 text-xs font-semibold text-neutral-50 dark:text-neutral-900 shadow hover:bg-neutral-700 dark:hover:bg-neutral-200 transition-colors"
+              >Figma</span
+            >
+            <span
+              class="inline-flex items-center rounded-md border border-transparent bg-neutral-900 dark:bg-neutral-50 px-2.5 py-0.5 text-xs font-semibold text-neutral-50 dark:text-neutral-900 shadow hover:bg-neutral-700 dark:hover:bg-neutral-200 transition-colors"
+              >PostgreSQL</span
+            >
+            <span
+              class="inline-flex items-center rounded-md border border-transparent bg-neutral-900 dark:bg-neutral-50 px-2.5 py-0.5 text-xs font-semibold text-neutral-50 dark:text-neutral-900 shadow hover:bg-neutral-700 dark:hover:bg-neutral-200 transition-colors"
+              >Cloud
+            </span>
+            <span
+              class="inline-flex items-center rounded-md border border-transparent bg-neutral-900 dark:bg-neutral-50 px-2.5 py-0.5 text-xs font-semibold text-neutral-50 dark:text-neutral-900 shadow hover:bg-neutral-700 dark:hover:bg-neutral-200 transition-colors"
+              >Responsive Design
+            </span>
+            <span
+              class="inline-flex items-center rounded-md border border-transparent bg-neutral-900 dark:bg-neutral-50 px-2.5 py-0.5 text-xs font-semibold text-neutral-50 dark:text-neutral-900 shadow hover:bg-neutral-700 dark:hover:bg-neutral-200 transition-colors"
+              >Communication
+            </span>
+          </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="space-y-6 py-8">
+          <div class="text-center space-y-2">
+            <div
+              class="inline-block rounded-lg bg-neutral-900 dark:bg-neutral-100 text-neutral-100 dark:text-neutral-900 px-3 py-1 text-sm"
+            >
+              My Projects
+            </div>
+            <h2
+              class="text-3xl font-bold tracking-tighter sm:text-5xl text-neutral-800 dark:text-neutral-200"
+            >
+              Check out my latest work
+            </h2>
+            <p
+              class="text-neutral-600 dark:text-neutral-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+            >
+              A selection of projects I'm proud of.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <!-- Project Card 1 -->
+            <div
+              class="rounded-lg bg-neutral-50 dark:bg-neutral-800 flex flex-col overflow-hidden border border-neutral-200 dark:border-neutral-700 hover:shadow-lg transition-all duration-300 ease-out h-full"
+            >
+              <a
+                class="block"
+                href="https://github.com/bhaweshpanwar/perffram-reporter"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./assets/perffarm-reporter.png"
+                  alt="Project 1 Screenshot"
+                  class="mx-auto h-40 w-full object-cover object-top"
+                />
+              </a>
+              <div class="p-3 flex flex-col flex-grow">
+                <div class="space-y-1">
+                  <h3
+                    class="font-semibold tracking-tight text-base text-neutral-900 dark:text-neutral-100"
+                  >
+                    pgperffarm-reporter
+                  </h3>
+                  <time
+                    class="font-sans text-xs text-neutral-500 dark:text-neutral-400"
+                    >20/03/2025 - 25/05/2025</time
+                  >
+                  <p
+                    class="text-xs text-neutral-600 dark:text-neutral-400 leading-relaxed"
+                  >
+                    Built a clean and interactive dashboard to visualize
+                    PostgreSQL performance results. Users can compare test data,
+                    filter by system or branch, view commit-level details, and
+                    spot performance regressions—all in a few clicks.
+                  </p>
+                </div>
+                <div class="mt-auto pt-2">
+                  <div class="mt-2 flex flex-wrap gap-1">
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >HTML</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >CSS</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >JavaScript</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Tailwind</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >D3.js</span
+                    >
+                  </div>
+                  <div class="mt-3 flex items-center gap-2">
+                    <a
+                      href="https://bhaweshpanwar.github.io/perffram-reporter/"
+                      target="_blank"
+                      class="inline-flex items-center gap-1.5 rounded-md text-xs font-medium bg-neutral-900 dark:bg-neutral-50 text-neutral-50 dark:text-neutral-900 hover:bg-neutral-700 dark:hover:bg-neutral-200 px-2 py-1 transition-colors"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path
+                          d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"
+                        ></path>
+                        <path d="M2 12h20"></path>
+                      </svg>
+                      Website
+                    </a>
+                    <a
+                      href="https://github.com/bhaweshpanwar/perffram-reporter"
+                      target="_blank"
+                      class="inline-flex items-center gap-1.5 rounded-md text-xs font-medium bg-neutral-900 dark:bg-neutral-50 text-neutral-50 dark:text-neutral-900 hover:bg-neutral-700 dark:hover:bg-neutral-200 px-2 py-1 transition-colors"
+                    >
+                      <svg
+                        viewBox="0 0 438.549 438.549"
+                        class="size-3 fill-current"
+                      >
+                        <path
+                          d="M409.132 114.573c-19.608-33.596-46.205-60.194-79.798-79.8-33.598-19.607-70.277-29.408-110.063-29.408-39.781 0-76.472 9.804-110.063 29.408-33.596 19.605-60.192 46.204-79.8 79.8C9.803 148.168 0 184.854 0 224.63c0 47.78 13.94 90.745 41.827 128.906 27.884 38.164 63.906 64.572 108.063 79.227 5.14.954 8.945.283 11.419-1.996 2.475-2.282 3.711-5.14 3.711-8.562 0-.571-.049-5.708-.144-15.417a2549.81 2549.81 0 01-.144-25.406l-6.567 1.136c-4.187.767-9.469 1.092-15.846 1-6.374-.089-12.991-.757-19.842-1.999-6.854-1.231-13.229-4.086-19.13-8.559-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-.951-2.568-2.098-3.711-3.429-1.142-1.331-1.997-2.663-2.568-3.997-.572-1.335-.098-2.43 1.427-3.289 1.525-.859 4.281-1.276 8.28-1.276l5.708.853c3.807.763 8.516 3.042 14.133 6.851 5.614 3.806 10.229 8.754 13.846 14.842 4.38 7.806 9.657 13.754 15.846 17.847 6.184 4.093 12.419 6.136 18.699 6.136 6.28 0 11.704-.476 16.274-1.423 4.565-.952 8.848-2.383 12.847-4.285 1.713-12.758 6.377-22.559 13.988-29.41-10.848-1.14-20.601-2.857-29.264-5.14-8.658-2.286-17.605-5.996-26.835-11.14-9.235-5.137-16.896-11.516-22.985-19.126-6.09-7.614-11.088-17.61-14.987-29.979-3.901-12.374-5.852-26.648-5.852-42.826 0-23.035 7.52-42.637 22.557-58.817-7.044-17.318-6.379-36.732 1.997-58.24 5.52-1.715 13.706-.428 24.554 3.853 10.85 4.283 18.794 7.952 23.84 10.994 5.046 3.041 9.089 5.618 12.135 7.708 17.705-4.947 35.976-7.421 54.818-7.421s37.117 2.474 54.823 7.421l10.849-6.849c7.419-4.57 16.18-8.758 26.262-12.565 10.088-3.805 17.802-4.853 23.134-3.138 8.562 21.509 9.325 40.922 2.279 58.24 15.036 16.18 22.559 35.787 22.559 58.817 0 16.178-1.958 30.497-5.853 42.966-3.9 12.471-8.941 22.457-15.125 29.979-6.191 7.521-13.901 13.85-23.131 18.986-9.232 5.14-18.182 8.85-26.84 11.136-8.662 2.286-18.415 4.004-29.263 5.146 9.894 8.562 14.842 22.077 14.842 40.539v60.237c0 3.422 1.19 6.279 3.572 8.562 2.379 2.279 6.136 2.95 11.276 1.995 44.163-14.653 80.185-41.062 108.068-79.226 27.88-38.161 41.825-81.126 41.825-128.906-.01-39.771-9.818-76.454-29.414-110.049z"
+                        ></path>
+                      </svg>
+                      Source
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Project 2  -->
+            <div
+              class="rounded-lg bg-neutral-50 dark:bg-neutral-800 flex flex-col overflow-hidden border border-neutral-200 dark:border-neutral-700 hover:shadow-lg transition-all duration-300 ease-out h-full"
+            >
+              <a
+                class="block"
+                href="https://github.com/bhaweshpanwar/kisan-choice"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./assets/kisan-choice.png"
+                  alt="Project 1 Screenshot"
+                  class="mx-auto h-40 w-full object-cover object-top"
+                />
+              </a>
+              <div class="p-3 flex flex-col flex-grow">
+                <div class="space-y-1">
+                  <h3
+                    class="font-semibold tracking-tight text-base text-neutral-900 dark:text-neutral-100"
+                  >
+                    Kisan Choice
+                  </h3>
+                  <time
+                    class="font-sans text-xs text-neutral-500 dark:text-neutral-400"
+                    >22/12/2024 - 10/05/2025</time
+                  >
+                  <p
+                    class="text-xs text-neutral-600 dark:text-neutral-400 leading-relaxed"
+                  >
+                    A full-stack agri-commerce platform that connects farmers
+                    directly with consumers—no middlemen, just fair trade.
+                    Features include real-time price negotiation, secure
+                    payments (Stripe), OTP-based login, and role-based
+                    dashboards. Handled everything solo—from React frontend to
+                    PostgreSQL backend—designed for speed, trust, and ease of
+                    use, even on low-end devices.
+                  </p>
+                </div>
+                <div class="mt-auto pt-2">
+                  <div class="mt-2 flex flex-wrap gap-1">
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >React.js</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Vite</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Tailwind CSS</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >ShadCN UI</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Radix UI</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Zod</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >React Hook Form</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >React Router</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >TypeScript</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Node.js</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Express.js</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >PostgreSQL</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Redis</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >JWT</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Passport.js</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Stripe</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Nodemailer</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Axios</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Bcrypt</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Lucide Icons</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Sonner</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >@tanstack/react-query</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >@stripe/stripe-js</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >@google/generative-ai</span
+                    >
+                  </div>
+                  <div class="mt-3 flex items-center gap-2">
+                    <a
+                      href="https://github.com/bhaweshpanwar/kisan-choice"
+                      target="_blank"
+                      class="inline-flex items-center gap-1.5 rounded-md text-xs font-medium bg-neutral-900 dark:bg-neutral-50 text-neutral-50 dark:text-neutral-900 hover:bg-neutral-700 dark:hover:bg-neutral-200 px-2 py-1 transition-colors"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path
+                          d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"
+                        ></path>
+                        <path d="M2 12h20"></path>
+                      </svg>
+                      Website
+                    </a>
+                    <a
+                      href="https://github.com/bhaweshpanwar/kisan-choice"
+                      target="_blank"
+                      class="inline-flex items-center gap-1.5 rounded-md text-xs font-medium bg-neutral-900 dark:bg-neutral-50 text-neutral-50 dark:text-neutral-900 hover:bg-neutral-700 dark:hover:bg-neutral-200 px-2 py-1 transition-colors"
+                    >
+                      <svg
+                        viewBox="0 0 438.549 438.549"
+                        class="size-3 fill-current"
+                      >
+                        <path
+                          d="M409.132 114.573c-19.608-33.596-46.205-60.194-79.798-79.8-33.598-19.607-70.277-29.408-110.063-29.408-39.781 0-76.472 9.804-110.063 29.408-33.596 19.605-60.192 46.204-79.8 79.8C9.803 148.168 0 184.854 0 224.63c0 47.78 13.94 90.745 41.827 128.906 27.884 38.164 63.906 64.572 108.063 79.227 5.14.954 8.945.283 11.419-1.996 2.475-2.282 3.711-5.14 3.711-8.562 0-.571-.049-5.708-.144-15.417a2549.81 2549.81 0 01-.144-25.406l-6.567 1.136c-4.187.767-9.469 1.092-15.846 1-6.374-.089-12.991-.757-19.842-1.999-6.854-1.231-13.229-4.086-19.13-8.559-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-.951-2.568-2.098-3.711-3.429-1.142-1.331-1.997-2.663-2.568-3.997-.572-1.335-.098-2.43 1.427-3.289 1.525-.859 4.281-1.276 8.28-1.276l5.708.853c3.807.763 8.516 3.042 14.133 6.851 5.614 3.806 10.229 8.754 13.846 14.842 4.38 7.806 9.657 13.754 15.846 17.847 6.184 4.093 12.419 6.136 18.699 6.136 6.28 0 11.704-.476 16.274-1.423 4.565-.952 8.848-2.383 12.847-4.285 1.713-12.758 6.377-22.559 13.988-29.41-10.848-1.14-20.601-2.857-29.264-5.14-8.658-2.286-17.605-5.996-26.835-11.14-9.235-5.137-16.896-11.516-22.985-19.126-6.09-7.614-11.088-17.61-14.987-29.979-3.901-12.374-5.852-26.648-5.852-42.826 0-23.035 7.52-42.637 22.557-58.817-7.044-17.318-6.379-36.732 1.997-58.24 5.52-1.715 13.706-.428 24.554 3.853 10.85 4.283 18.794 7.952 23.84 10.994 5.046 3.041 9.089 5.618 12.135 7.708 17.705-4.947 35.976-7.421 54.818-7.421s37.117 2.474 54.823 7.421l10.849-6.849c7.419-4.57 16.18-8.758 26.262-12.565 10.088-3.805 17.802-4.853 23.134-3.138 8.562 21.509 9.325 40.922 2.279 58.24 15.036 16.18 22.559 35.787 22.559 58.817 0 16.178-1.958 30.497-5.853 42.966-3.9 12.471-8.941 22.457-15.125 29.979-6.191 7.521-13.901 13.85-23.131 18.986-9.232 5.14-18.182 8.85-26.84 11.136-8.662 2.286-18.415 4.004-29.263 5.146 9.894 8.562 14.842 22.077 14.842 40.539v60.237c0 3.422 1.19 6.279 3.572 8.562 2.379 2.279 6.136 2.95 11.276 1.995 44.163-14.653 80.185-41.062 108.068-79.226 27.88-38.161 41.825-81.126 41.825-128.906-.01-39.771-9.818-76.454-29.414-110.049z"
+                        ></path>
+                      </svg>
+                      Source 01
+                    </a>
+                    <a
+                      href="https://github.com/bhaweshpanwar/kisan-choice-market"
+                      target="_blank"
+                      class="inline-flex items-center gap-1.5 rounded-md text-xs font-medium bg-neutral-900 dark:bg-neutral-50 text-neutral-50 dark:text-neutral-900 hover:bg-neutral-700 dark:hover:bg-neutral-200 px-2 py-1 transition-colors"
+                    >
+                      <svg
+                        viewBox="0 0 438.549 438.549"
+                        class="size-3 fill-current"
+                      >
+                        <path
+                          d="M409.132 114.573c-19.608-33.596-46.205-60.194-79.798-79.8-33.598-19.607-70.277-29.408-110.063-29.408-39.781 0-76.472 9.804-110.063 29.408-33.596 19.605-60.192 46.204-79.8 79.8C9.803 148.168 0 184.854 0 224.63c0 47.78 13.94 90.745 41.827 128.906 27.884 38.164 63.906 64.572 108.063 79.227 5.14.954 8.945.283 11.419-1.996 2.475-2.282 3.711-5.14 3.711-8.562 0-.571-.049-5.708-.144-15.417a2549.81 2549.81 0 01-.144-25.406l-6.567 1.136c-4.187.767-9.469 1.092-15.846 1-6.374-.089-12.991-.757-19.842-1.999-6.854-1.231-13.229-4.086-19.13-8.559-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-.951-2.568-2.098-3.711-3.429-1.142-1.331-1.997-2.663-2.568-3.997-.572-1.335-.098-2.43 1.427-3.289 1.525-.859 4.281-1.276 8.28-1.276l5.708.853c3.807.763 8.516 3.042 14.133 6.851 5.614 3.806 10.229 8.754 13.846 14.842 4.38 7.806 9.657 13.754 15.846 17.847 6.184 4.093 12.419 6.136 18.699 6.136 6.28 0 11.704-.476 16.274-1.423 4.565-.952 8.848-2.383 12.847-4.285 1.713-12.758 6.377-22.559 13.988-29.41-10.848-1.14-20.601-2.857-29.264-5.14-8.658-2.286-17.605-5.996-26.835-11.14-9.235-5.137-16.896-11.516-22.985-19.126-6.09-7.614-11.088-17.61-14.987-29.979-3.901-12.374-5.852-26.648-5.852-42.826 0-23.035 7.52-42.637 22.557-58.817-7.044-17.318-6.379-36.732 1.997-58.24 5.52-1.715 13.706-.428 24.554 3.853 10.85 4.283 18.794 7.952 23.84 10.994 5.046 3.041 9.089 5.618 12.135 7.708 17.705-4.947 35.976-7.421 54.818-7.421s37.117 2.474 54.823 7.421l10.849-6.849c7.419-4.57 16.18-8.758 26.262-12.565 10.088-3.805 17.802-4.853 23.134-3.138 8.562 21.509 9.325 40.922 2.279 58.24 15.036 16.18 22.559 35.787 22.559 58.817 0 16.178-1.958 30.497-5.853 42.966-3.9 12.471-8.941 22.457-15.125 29.979-6.191 7.521-13.901 13.85-23.131 18.986-9.232 5.14-18.182 8.85-26.84 11.136-8.662 2.286-18.415 4.004-29.263 5.146 9.894 8.562 14.842 22.077 14.842 40.539v60.237c0 3.422 1.19 6.279 3.572 8.562 2.379 2.279 6.136 2.95 11.276 1.995 44.163-14.653 80.185-41.062 108.068-79.226 27.88-38.161 41.825-81.126 41.825-128.906-.01-39.771-9.818-76.454-29.414-110.049z"
+                        ></path>
+                      </svg>
+                      Source 02
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div
+              class="rounded-lg bg-neutral-50 dark:bg-neutral-800 flex flex-col overflow-hidden border border-neutral-200 dark:border-neutral-700 hover:shadow-lg transition-all duration-300 ease-out h-full"
+            >
+              <a
+                class="block"
+                href="https://github.com/bhaweshpanwar/Ascentis-Bank"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./assets/ascentis-bank.png"
+                  alt="Project 1 Screenshot"
+                  class="mx-auto h-40 w-full object-cover object-top"
+                />
+              </a>
+              <div class="p-3 flex flex-col flex-grow">
+                <div class="space-y-1">
+                  <h3
+                    class="font-semibold tracking-tight text-base text-neutral-900 dark:text-neutral-100"
+                  >
+                    Ascentis Bank
+                  </h3>
+                  <time
+                    class="font-sans text-xs text-neutral-500 dark:text-neutral-400"
+                    >Date Range</time
+                  >
+                  <p
+                    class="text-xs text-neutral-600 dark:text-neutral-400 leading-relaxed"
+                  >
+                    A sleek banking web app built with React and Material UI,
+                    offering users a secure and intuitive platform for managing
+                    their accounts. Features include OTP-based account
+                    transfers, fixed deposit handling, auto-pay setup, account
+                    closure, and role-based dashboards. Focused on real-world
+                    UX, with animated transitions, responsive design, and
+                    encrypted data flows—all optimized for performance and
+                    clarity.
+                  </p>
+                </div>
+                <div class="mt-auto pt-2">
+                  <div class="mt-2 flex flex-wrap gap-1">
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >React.js</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Vite</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Material UI</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Tailwind CSS</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Axios</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >React Router</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Font Awesome</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Heroicons</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >React Spring</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Socket.io</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >JS-Cookie</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >React Google Recaptcha</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >React Slick</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Country-State-City</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >OTP Security</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Responsive UI</span
+                    >
+                  </div>
+                  <div class="mt-3 flex items-center gap-2">
+                    <a
+                      href="https://ascentis-bank.onrender.com/"
+                      target="_blank"
+                      class="inline-flex items-center gap-1.5 rounded-md text-xs font-medium bg-neutral-900 dark:bg-neutral-50 text-neutral-50 dark:text-neutral-900 hover:bg-neutral-700 dark:hover:bg-neutral-200 px-2 py-1 transition-colors"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path
+                          d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"
+                        ></path>
+                        <path d="M2 12h20"></path>
+                      </svg>
+                      Website
+                    </a>
+                    <a
+                      href="https://github.com/bhaweshpanwar/Ascentis-Bank"
+                      target="_blank"
+                      class="inline-flex items-center gap-1.5 rounded-md text-xs font-medium bg-neutral-900 dark:bg-neutral-50 text-neutral-50 dark:text-neutral-900 hover:bg-neutral-700 dark:hover:bg-neutral-200 px-2 py-1 transition-colors"
+                    >
+                      <svg
+                        viewBox="0 0 438.549 438.549"
+                        class="size-3 fill-current"
+                      >
+                        <path
+                          d="M409.132 114.573c-19.608-33.596-46.205-60.194-79.798-79.8-33.598-19.607-70.277-29.408-110.063-29.408-39.781 0-76.472 9.804-110.063 29.408-33.596 19.605-60.192 46.204-79.8 79.8C9.803 148.168 0 184.854 0 224.63c0 47.78 13.94 90.745 41.827 128.906 27.884 38.164 63.906 64.572 108.063 79.227 5.14.954 8.945.283 11.419-1.996 2.475-2.282 3.711-5.14 3.711-8.562 0-.571-.049-5.708-.144-15.417a2549.81 2549.81 0 01-.144-25.406l-6.567 1.136c-4.187.767-9.469 1.092-15.846 1-6.374-.089-12.991-.757-19.842-1.999-6.854-1.231-13.229-4.086-19.13-8.559-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-.951-2.568-2.098-3.711-3.429-1.142-1.331-1.997-2.663-2.568-3.997-.572-1.335-.098-2.43 1.427-3.289 1.525-.859 4.281-1.276 8.28-1.276l5.708.853c3.807.763 8.516 3.042 14.133 6.851 5.614 3.806 10.229 8.754 13.846 14.842 4.38 7.806 9.657 13.754 15.846 17.847 6.184 4.093 12.419 6.136 18.699 6.136 6.28 0 11.704-.476 16.274-1.423 4.565-.952 8.848-2.383 12.847-4.285 1.713-12.758 6.377-22.559 13.988-29.41-10.848-1.14-20.601-2.857-29.264-5.14-8.658-2.286-17.605-5.996-26.835-11.14-9.235-5.137-16.896-11.516-22.985-19.126-6.09-7.614-11.088-17.61-14.987-29.979-3.901-12.374-5.852-26.648-5.852-42.826 0-23.035 7.52-42.637 22.557-58.817-7.044-17.318-6.379-36.732 1.997-58.24 5.52-1.715 13.706-.428 24.554 3.853 10.85 4.283 18.794 7.952 23.84 10.994 5.046 3.041 9.089 5.618 12.135 7.708 17.705-4.947 35.976-7.421 54.818-7.421s37.117 2.474 54.823 7.421l10.849-6.849c7.419-4.57 16.18-8.758 26.262-12.565 10.088-3.805 17.802-4.853 23.134-3.138 8.562 21.509 9.325 40.922 2.279 58.24 15.036 16.18 22.559 35.787 22.559 58.817 0 16.178-1.958 30.497-5.853 42.966-3.9 12.471-8.941 22.457-15.125 29.979-6.191 7.521-13.901 13.85-23.131 18.986-9.232 5.14-18.182 8.85-26.84 11.136-8.662 2.286-18.415 4.004-29.263 5.146 9.894 8.562 14.842 22.077 14.842 40.539v60.237c0 3.422 1.19 6.279 3.572 8.562 2.379 2.279 6.136 2.95 11.276 1.995 44.163-14.653 80.185-41.062 108.068-79.226 27.88-38.161 41.825-81.126 41.825-128.906-.01-39.771-9.818-76.454-29.414-110.049z"
+                        ></path>
+                      </svg>
+                      Source
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div
+              class="rounded-lg bg-neutral-50 dark:bg-neutral-800 flex flex-col overflow-hidden border border-neutral-200 dark:border-neutral-700 hover:shadow-lg transition-all duration-300 ease-out h-full"
+            >
+              <a
+                class="block"
+                href="https://github.com/bhaweshpanwar/natours"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./assets/natours.png"
+                  alt="Project 1 Screenshot"
+                  class="mx-auto h-40 w-full object-cover object-top"
+                />
+              </a>
+              <div class="p-3 flex flex-col flex-grow">
+                <div class="space-y-1">
+                  <h3
+                    class="font-semibold tracking-tight text-base text-neutral-900 dark:text-neutral-100"
+                  >
+                    Natours
+                  </h3>
+                  <time
+                    class="font-sans text-xs text-neutral-500 dark:text-neutral-400"
+                    >03/01/2025 - 20/02/2025</time
+                  >
+                  <p
+                    class="text-xs text-neutral-600 dark:text-neutral-400 leading-relaxed"
+                  >
+                    A full-stack travel booking platform built with performance,
+                    security, and scalability in mind. Users can explore tours,
+                    book trips with secure Stripe payments, manage their
+                    profiles, and receive real-time email notifications.
+                    Featuring role-based access, advanced filtering, and image
+                    uploads with Sharp, the app integrates best practices in API
+                    security (rate limiting, sanitization, Helmet), JWT-based
+                    authentication, and Pug templating for clean server-rendered
+                    pages.
+                  </p>
+                </div>
+                <div class="mt-auto pt-2">
+                  <div class="mt-2 flex flex-wrap gap-1">
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Node.js</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Express.js</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >PostgreSQL</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Pug</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Stripe</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >JWT</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Nodemailer</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Multer</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Sharp</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Joi</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Helmet</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >XSS Clean</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Rate Limiting</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Express-Mongo-Sanitize</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Slugify</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Axios</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Dotenv</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Morgan</span
+                    >
+                  </div>
+                  <div class="mt-3 flex items-center gap-2">
+                    <a
+                      href="https://natours.bhaweshpanwar.xyz/"
+                      target="_blank"
+                      class="inline-flex items-center gap-1.5 rounded-md text-xs font-medium bg-neutral-900 dark:bg-neutral-50 text-neutral-50 dark:text-neutral-900 hover:bg-neutral-700 dark:hover:bg-neutral-200 px-2 py-1 transition-colors"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path
+                          d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"
+                        ></path>
+                        <path d="M2 12h20"></path>
+                      </svg>
+                      Website
+                    </a>
+                    <a
+                      href="https://github.com/bhaweshpanwar/natours"
+                      target="_blank"
+                      class="inline-flex items-center gap-1.5 rounded-md text-xs font-medium bg-neutral-900 dark:bg-neutral-50 text-neutral-50 dark:text-neutral-900 hover:bg-neutral-700 dark:hover:bg-neutral-200 px-2 py-1 transition-colors"
+                    >
+                      <svg
+                        viewBox="0 0 438.549 438.549"
+                        class="size-3 fill-current"
+                      >
+                        <path
+                          d="M409.132 114.573c-19.608-33.596-46.205-60.194-79.798-79.8-33.598-19.607-70.277-29.408-110.063-29.408-39.781 0-76.472 9.804-110.063 29.408-33.596 19.605-60.192 46.204-79.8 79.8C9.803 148.168 0 184.854 0 224.63c0 47.78 13.94 90.745 41.827 128.906 27.884 38.164 63.906 64.572 108.063 79.227 5.14.954 8.945.283 11.419-1.996 2.475-2.282 3.711-5.14 3.711-8.562 0-.571-.049-5.708-.144-15.417a2549.81 2549.81 0 01-.144-25.406l-6.567 1.136c-4.187.767-9.469 1.092-15.846 1-6.374-.089-12.991-.757-19.842-1.999-6.854-1.231-13.229-4.086-19.13-8.559-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-.951-2.568-2.098-3.711-3.429-1.142-1.331-1.997-2.663-2.568-3.997-.572-1.335-.098-2.43 1.427-3.289 1.525-.859 4.281-1.276 8.28-1.276l5.708.853c3.807.763 8.516 3.042 14.133 6.851 5.614 3.806 10.229 8.754 13.846 14.842 4.38 7.806 9.657 13.754 15.846 17.847 6.184 4.093 12.419 6.136 18.699 6.136 6.28 0 11.704-.476 16.274-1.423 4.565-.952 8.848-2.383 12.847-4.285 1.713-12.758 6.377-22.559 13.988-29.41-10.848-1.14-20.601-2.857-29.264-5.14-8.658-2.286-17.605-5.996-26.835-11.14-9.235-5.137-16.896-11.516-22.985-19.126-6.09-7.614-11.088-17.61-14.987-29.979-3.901-12.374-5.852-26.648-5.852-42.826 0-23.035 7.52-42.637 22.557-58.817-7.044-17.318-6.379-36.732 1.997-58.24 5.52-1.715 13.706-.428 24.554 3.853 10.85 4.283 18.794 7.952 23.84 10.994 5.046 3.041 9.089 5.618 12.135 7.708 17.705-4.947 35.976-7.421 54.818-7.421s37.117 2.474 54.823 7.421l10.849-6.849c7.419-4.57 16.18-8.758 26.262-12.565 10.088-3.805 17.802-4.853 23.134-3.138 8.562 21.509 9.325 40.922 2.279 58.24 15.036 16.18 22.559 35.787 22.559 58.817 0 16.178-1.958 30.497-5.853 42.966-3.9 12.471-8.941 22.457-15.125 29.979-6.191 7.521-13.901 13.85-23.131 18.986-9.232 5.14-18.182 8.85-26.84 11.136-8.662 2.286-18.415 4.004-29.263 5.146 9.894 8.562 14.842 22.077 14.842 40.539v60.237c0 3.422 1.19 6.279 3.572 8.562 2.379 2.279 6.136 2.95 11.276 1.995 44.163-14.653 80.185-41.062 108.068-79.226 27.88-38.161 41.825-81.126 41.825-128.906-.01-39.771-9.818-76.454-29.414-110.049z"
+                        ></path>
+                      </svg>
+                      Source
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div
+              class="rounded-lg bg-neutral-50 dark:bg-neutral-800 flex flex-col overflow-hidden border border-neutral-200 dark:border-neutral-700 hover:shadow-lg transition-all duration-300 ease-out h-full"
+            >
+              <a
+                class="block"
+                href="https://github.com/bhaweshpanwar/PositiveWay"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./assets/positiveway-solutions.png"
+                  alt="Project 1 Screenshot"
+                  class="mx-auto h-40 w-full object-cover object-top"
+                />
+              </a>
+              <div class="p-3 flex flex-col flex-grow">
+                <div class="space-y-1">
+                  <h3
+                    class="font-semibold tracking-tight text-base text-neutral-900 dark:text-neutral-100"
+                  >
+                    PositiveWay Solutions
+                  </h3>
+                  <time
+                    class="font-sans text-xs text-neutral-500 dark:text-neutral-400"
+                    >16/09/2024 - 10/10/2024</time
+                  >
+                  <p
+                    class="text-xs text-neutral-600 dark:text-neutral-400 leading-relaxed"
+                  >
+                    A corporate website built for PositiveWay Solutions Pvt.
+                    Ltd., focused on clean design, fast load times, and easy
+                    navigation. Developed using React with Tailwind CSS for
+                    responsive layout, the site highlights services, brand
+                    identity, and company values. Features smooth routing,
+                    reusable components, and optimized performance with Vite.
+                    Deployed live after gathering and iterating on real client
+                    feedback.
+                  </p>
+                </div>
+                <div class="mt-auto pt-2">
+                  <div class="mt-2 flex flex-wrap gap-1">
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >React.js</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Vite</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Tailwind CSS</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >React Router</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >React Icons</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >PostCSS</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >ESLint</span
+                    >
+                  </div>
+                  <div class="mt-3 flex items-center gap-2">
+                    <a
+                      href="https://positiveway.in/"
+                      target="_blank"
+                      class="inline-flex items-center gap-1.5 rounded-md text-xs font-medium bg-neutral-900 dark:bg-neutral-50 text-neutral-50 dark:text-neutral-900 hover:bg-neutral-700 dark:hover:bg-neutral-200 px-2 py-1 transition-colors"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path
+                          d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"
+                        ></path>
+                        <path d="M2 12h20"></path>
+                      </svg>
+                      Website
+                    </a>
+                    <a
+                      href="https://github.com/bhaweshpanwar/PositiveWay"
+                      target="_blank"
+                      class="inline-flex items-center gap-1.5 rounded-md text-xs font-medium bg-neutral-900 dark:bg-neutral-50 text-neutral-50 dark:text-neutral-900 hover:bg-neutral-700 dark:hover:bg-neutral-200 px-2 py-1 transition-colors"
+                    >
+                      <svg
+                        viewBox="0 0 438.549 438.549"
+                        class="size-3 fill-current"
+                      >
+                        <path
+                          d="M409.132 114.573c-19.608-33.596-46.205-60.194-79.798-79.8-33.598-19.607-70.277-29.408-110.063-29.408-39.781 0-76.472 9.804-110.063 29.408-33.596 19.605-60.192 46.204-79.8 79.8C9.803 148.168 0 184.854 0 224.63c0 47.78 13.94 90.745 41.827 128.906 27.884 38.164 63.906 64.572 108.063 79.227 5.14.954 8.945.283 11.419-1.996 2.475-2.282 3.711-5.14 3.711-8.562 0-.571-.049-5.708-.144-15.417a2549.81 2549.81 0 01-.144-25.406l-6.567 1.136c-4.187.767-9.469 1.092-15.846 1-6.374-.089-12.991-.757-19.842-1.999-6.854-1.231-13.229-4.086-19.13-8.559-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-.951-2.568-2.098-3.711-3.429-1.142-1.331-1.997-2.663-2.568-3.997-.572-1.335-.098-2.43 1.427-3.289 1.525-.859 4.281-1.276 8.28-1.276l5.708.853c3.807.763 8.516 3.042 14.133 6.851 5.614 3.806 10.229 8.754 13.846 14.842 4.38 7.806 9.657 13.754 15.846 17.847 6.184 4.093 12.419 6.136 18.699 6.136 6.28 0 11.704-.476 16.274-1.423 4.565-.952 8.848-2.383 12.847-4.285 1.713-12.758 6.377-22.559 13.988-29.41-10.848-1.14-20.601-2.857-29.264-5.14-8.658-2.286-17.605-5.996-26.835-11.14-9.235-5.137-16.896-11.516-22.985-19.126-6.09-7.614-11.088-17.61-14.987-29.979-3.901-12.374-5.852-26.648-5.852-42.826 0-23.035 7.52-42.637 22.557-58.817-7.044-17.318-6.379-36.732 1.997-58.24 5.52-1.715 13.706-.428 24.554 3.853 10.85 4.283 18.794 7.952 23.84 10.994 5.046 3.041 9.089 5.618 12.135 7.708 17.705-4.947 35.976-7.421 54.818-7.421s37.117 2.474 54.823 7.421l10.849-6.849c7.419-4.57 16.18-8.758 26.262-12.565 10.088-3.805 17.802-4.853 23.134-3.138 8.562 21.509 9.325 40.922 2.279 58.24 15.036 16.18 22.559 35.787 22.559 58.817 0 16.178-1.958 30.497-5.853 42.966-3.9 12.471-8.941 22.457-15.125 29.979-6.191 7.521-13.901 13.85-23.131 18.986-9.232 5.14-18.182 8.85-26.84 11.136-8.662 2.286-18.415 4.004-29.263 5.146 9.894 8.562 14.842 22.077 14.842 40.539v60.237c0 3.422 1.19 6.279 3.572 8.562 2.379 2.279 6.136 2.95 11.276 1.995 44.163-14.653 80.185-41.062 108.068-79.226 27.88-38.161 41.825-81.126 41.825-128.906-.01-39.771-9.818-76.454-29.414-110.049z"
+                        ></path>
+                      </svg>
+                      Source
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="rounded-lg bg-neutral-50 dark:bg-neutral-800 flex flex-col overflow-hidden border border-neutral-200 dark:border-neutral-700 hover:shadow-lg transition-all duration-300 ease-out h-full"
+            >
+              <a
+                class="block"
+                href="https://github.com/bhaweshpanwar/ChatBot-Backend"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./assets/chatbot.png"
+                  alt="Project 1 Screenshot"
+                  class="mx-auto h-40 w-full object-cover object-top"
+                />
+              </a>
+              <div class="p-3 flex flex-col flex-grow">
+                <div class="space-y-1">
+                  <h3
+                    class="font-semibold tracking-tight text-base text-neutral-900 dark:text-neutral-100"
+                  >
+                    Chatbot Generative AI
+                  </h3>
+                  <time
+                    class="font-sans text-xs text-neutral-500 dark:text-neutral-400"
+                    >15/12/2024 - 20/12/2024</time
+                  >
+                  <p
+                    class="text-xs text-neutral-600 dark:text-neutral-400 leading-relaxed"
+                  >
+                    A real-time chatbot powered by Google's Generative AI API.
+                    Users can ask questions and receive intelligent responses
+                    instantly. Built with Express and Socket.IO for
+                    bi-directional communication, this project focuses on smooth
+                    interaction, minimal latency, and scalable backend
+                    architecture. The chatbot handles user inputs dynamically
+                    and responds via AI-generated completions—all wrapped in a
+                    fast, clean Node.js setup.
+                  </p>
+                </div>
+                <div class="mt-auto pt-2">
+                  <div class="mt-2 flex flex-wrap gap-1">
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Node.js</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Express.js</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Socket.IO</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >@google/generative-ai</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Axios</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Dotenv</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >CORS</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md border border-transparent bg-neutral-200 dark:bg-neutral-700 px-1.5 py-0.5 text-[10px] font-semibold text-neutral-700 dark:text-neutral-200"
+                      >Nodemon</span
+                    >
+                  </div>
+                  <div class="mt-3 flex items-center gap-2">
+                    <a
+                      href="https://ascentis-bank.onrender.com/"
+                      target="_blank"
+                      class="inline-flex items-center gap-1.5 rounded-md text-xs font-medium bg-neutral-900 dark:bg-neutral-50 text-neutral-50 dark:text-neutral-900 hover:bg-neutral-700 dark:hover:bg-neutral-200 px-2 py-1 transition-colors"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path
+                          d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"
+                        ></path>
+                        <path d="M2 12h20"></path>
+                      </svg>
+                      Website
+                    </a>
+                    <a
+                      href="https://github.com/bhaweshpanwar/ChatBot-Backend"
+                      target="_blank"
+                      class="inline-flex items-center gap-1.5 rounded-md text-xs font-medium bg-neutral-900 dark:bg-neutral-50 text-neutral-50 dark:text-neutral-900 hover:bg-neutral-700 dark:hover:bg-neutral-200 px-2 py-1 transition-colors"
+                    >
+                      <svg
+                        viewBox="0 0 438.549 438.549"
+                        class="size-3 fill-current"
+                      >
+                        <path
+                          d="M409.132 114.573c-19.608-33.596-46.205-60.194-79.798-79.8-33.598-19.607-70.277-29.408-110.063-29.408-39.781 0-76.472 9.804-110.063 29.408-33.596 19.605-60.192 46.204-79.8 79.8C9.803 148.168 0 184.854 0 224.63c0 47.78 13.94 90.745 41.827 128.906 27.884 38.164 63.906 64.572 108.063 79.227 5.14.954 8.945.283 11.419-1.996 2.475-2.282 3.711-5.14 3.711-8.562 0-.571-.049-5.708-.144-15.417a2549.81 2549.81 0 01-.144-25.406l-6.567 1.136c-4.187.767-9.469 1.092-15.846 1-6.374-.089-12.991-.757-19.842-1.999-6.854-1.231-13.229-4.086-19.13-8.559-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-.951-2.568-2.098-3.711-3.429-1.142-1.331-1.997-2.663-2.568-3.997-.572-1.335-.098-2.43 1.427-3.289 1.525-.859 4.281-1.276 8.28-1.276l5.708.853c3.807.763 8.516 3.042 14.133 6.851 5.614 3.806 10.229 8.754 13.846 14.842 4.38 7.806 9.657 13.754 15.846 17.847 6.184 4.093 12.419 6.136 18.699 6.136 6.28 0 11.704-.476 16.274-1.423 4.565-.952 8.848-2.383 12.847-4.285 1.713-12.758 6.377-22.559 13.988-29.41-10.848-1.14-20.601-2.857-29.264-5.14-8.658-2.286-17.605-5.996-26.835-11.14-9.235-5.137-16.896-11.516-22.985-19.126-6.09-7.614-11.088-17.61-14.987-29.979-3.901-12.374-5.852-26.648-5.852-42.826 0-23.035 7.52-42.637 22.557-58.817-7.044-17.318-6.379-36.732 1.997-58.24 5.52-1.715 13.706-.428 24.554 3.853 10.85 4.283 18.794 7.952 23.84 10.994 5.046 3.041 9.089 5.618 12.135 7.708 17.705-4.947 35.976-7.421 54.818-7.421s37.117 2.474 54.823 7.421l10.849-6.849c7.419-4.57 16.18-8.758 26.262-12.565 10.088-3.805 17.802-4.853 23.134-3.138 8.562 21.509 9.325 40.922 2.279 58.24 15.036 16.18 22.559 35.787 22.559 58.817 0 16.178-1.958 30.497-5.853 42.966-3.9 12.471-8.941 22.457-15.125 29.979-6.191 7.521-13.901 13.85-23.131 18.986-9.232 5.14-18.182 8.85-26.84 11.136-8.662 2.286-18.415 4.004-29.263 5.146 9.894 8.562 14.842 22.077 14.842 40.539v60.237c0 3.422 1.19 6.279 3.572 8.562 2.379 2.279 6.136 2.95 11.276 1.995 44.163-14.653 80.185-41.062 108.068-79.226 27.88-38.161 41.825-81.126 41.825-128.906-.01-39.771-9.818-76.454-29.414-110.049z"
+                        ></path>
+                      </svg>
+                      Source
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Hackathons Section  -->
+        <section id="hackathons" class="space-y-6 py-8">
+          <div class="text-center space-y-2">
+            <div
+              class="inline-block rounded-lg bg-neutral-900 dark:bg-neutral-100 text-neutral-100 dark:text-neutral-900 px-3 py-1 text-sm"
+            >
+              Hackathons
+            </div>
+            <h2
+              class="text-3xl font-bold tracking-tighter sm:text-5xl text-neutral-800 dark:text-neutral-200"
+            >
+              I like building things
+            </h2>
+            <p
+              class="text-neutral-600 dark:text-neutral-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+            >
+              Some hackathons I've participated in.
+            </p>
+          </div>
+          <ul
+            class="ml-4 border-l border-dashed border-neutral-300 dark:border-neutral-600 divide-y divide-dashed divide-neutral-300 dark:divide-neutral-600"
+          >
+            <!-- Hackathon Item 1 -->
+            <li class="relative ml-10 py-4">
+              <div
+                class="absolute -left-[3.2rem] top-2 flex items-center justify-center bg-white dark:bg-neutral-900 rounded-full"
+              >
+                <span
+                  class="relative flex shrink-0 overflow-hidden rounded-full border border-neutral-200 dark:border-neutral-700 size-12 bg-neutral-100 dark:bg-neutral-700"
+                >
+                  <span
+                    class="flex h-full w-full items-center justify-center rounded-full text-xl font-medium text-neutral-600 dark:text-neutral-300"
+                    >SIH</span
+                  >
+                </span>
+              </div>
+              <div class="flex-1 space-y-1">
+                <time class="text-xs text-neutral-500 dark:text-neutral-400">
+                  March 2024
+                </time>
+                <h3
+                  class="font-semibold leading-none text-neutral-800 dark:text-neutral-200"
+                >
+                  Smart India Hackathon (SIH) 2024
+                </h3>
+                <p class="text-sm text-neutral-500 dark:text-neutral-400">
+                  Indore, India
+                </p>
+                <p class="text-sm text-neutral-600 dark:text-neutral-400">
+                  Worked on a government-proposed agri-tech solution enabling
+                  farmers to negotiate crop prices digitally. Built a full-stack
+                  prototype with OTP-secured logins, real-time messaging,
+                  buyer–farmer interfaces, and an admin dashboard for
+                  verification and moderation. The solution focused on trust,
+                  usability, and accessibility—especially for rural users.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-8">
+          <div
+            class="grid items-center justify-center gap-4 px-4 text-center md:px-6"
+          >
+            <div class="space-y-3">
+              <div
+                class="inline-block rounded-lg bg-neutral-900 dark:bg-neutral-100 text-neutral-100 dark:text-neutral-900 px-3 py-1 text-sm"
+              >
+                Contact
+              </div>
+              <h2
+                class="text-3xl font-bold tracking-tighter sm:text-5xl text-neutral-800 dark:text-neutral-200"
+              >
+                Get in Touch
+              </h2>
+              <p
+                class="mx-auto max-w-[600px] text-neutral-600 dark:text-neutral-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+              >
+                Want to chat? Feel free to reach out on
+                <a
+                  class="text-blue-600 dark:text-blue-400 hover:underline"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=panwarbhawesh1112@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  email</a
+                >
+                or connect with me on social media.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- Floating Dock Navigation -->
+    <div
+      class="pointer-events-none fixed inset-x-0 bottom-0 z-30 mx-auto mb-4 flex origin-bottom h-full max-h-14"
+    >
+      <div
+        class="fixed bottom-0 inset-x-0 h-16 w-full bg-white/80 dark:bg-neutral-900/80 backdrop-blur-lg [mask-image:linear-gradient(to_top,black_30%,transparent)]"
+      ></div>
+      <div
+        class="w-auto p-1.5 rounded-full border border-neutral-200/80 dark:border-neutral-700/80 z-50 pointer-events-auto relative mx-auto flex min-h-full h-full items-center px-2 bg-white/70 dark:bg-neutral-800/70 shadow-lg backdrop-blur-md"
+      >
+        <a
+          href="#"
+          class="flex aspect-square cursor-pointer items-center justify-center rounded-full size-10 hover:bg-neutral-100 dark:hover:bg-neutral-700 transition-colors"
+          title="Home"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+        </a>
+
+        <div
+          class="shrink-0 bg-neutral-300 dark:bg-neutral-600 w-[1px] h-6 mx-1.5"
+        ></div>
+
+        <a
+          href="https://github.com/bhaweshpanwar"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex aspect-square cursor-pointer items-center justify-center rounded-full size-10 hover:bg-neutral-100 dark:hover:bg-neutral-700 transition-colors"
+          title="GitHub"
+        >
+          <svg viewBox="0 0 438.549 438.549" class="size-4 fill-current">
+            <path
+              d="M409.132 114.573c-19.608-33.596-46.205-60.194-79.798-79.8-33.598-19.607-70.277-29.408-110.063-29.408-39.781 0-76.472 9.804-110.063 29.408-33.596 19.605-60.192 46.204-79.8 79.8C9.803 148.168 0 184.854 0 224.63c0 47.78 13.94 90.745 41.827 128.906 27.884 38.164 63.906 64.572 108.063 79.227 5.14.954 8.945.283 11.419-1.996 2.475-2.282 3.711-5.14 3.711-8.562 0-.571-.049-5.708-.144-15.417a2549.81 2549.81 0 01-.144-25.406l-6.567 1.136c-4.187.767-9.469 1.092-15.846 1-6.374-.089-12.991-.757-19.842-1.999-6.854-1.231-13.229-4.086-19.13-8.559-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-.951-2.568-2.098-3.711-3.429-1.142-1.331-1.997-2.663-2.568-3.997-.572-1.335-.098-2.43 1.427-3.289 1.525-.859 4.281-1.276 8.28-1.276l5.708.853c3.807.763 8.516 3.042 14.133 6.851 5.614 3.806 10.229 8.754 13.846 14.842 4.38 7.806 9.657 13.754 15.846 17.847 6.184 4.093 12.419 6.136 18.699 6.136 6.28 0 11.704-.476 16.274-1.423 4.565-.952 8.848-2.383 12.847-4.285 1.713-12.758 6.377-22.559 13.988-29.41-10.848-1.14-20.601-2.857-29.264-5.14-8.658-2.286-17.605-5.996-26.835-11.14-9.235-5.137-16.896-11.516-22.985-19.126-6.09-7.614-11.088-17.61-14.987-29.979-3.901-12.374-5.852-26.648-5.852-42.826 0-23.035 7.52-42.637 22.557-58.817-7.044-17.318-6.379-36.732 1.997-58.24 5.52-1.715 13.706-.428 24.554 3.853 10.85 4.283 18.794 7.952 23.84 10.994 5.046 3.041 9.089 5.618 12.135 7.708 17.705-4.947 35.976-7.421 54.818-7.421s37.117 2.474 54.823 7.421l10.849-6.849c7.419-4.57 16.18-8.758 26.262-12.565 10.088-3.805 17.802-4.853 23.134-3.138 8.562 21.509 9.325 40.922 2.279 58.24 15.036 16.18 22.559 35.787 22.559 58.817 0 16.178-1.958 30.497-5.853 42.966-3.9 12.471-8.941 22.457-15.125 29.979-6.191 7.521-13.901 13.85-23.131 18.986-9.232 5.14-18.182 8.85-26.84 11.136-8.662 2.286-18.415 4.004-29.263 5.146 9.894 8.562 14.842 22.077 14.842 40.539v60.237c0 3.422 1.19 6.279 3.572 8.562 2.379 2.279 6.136 2.95 11.276 1.995 44.163-14.653 80.185-41.062 108.068-79.226 27.88-38.161 41.825-81.126 41.825-128.906-.01-39.771-9.818-76.454-29.414-110.049z"
+            ></path>
+          </svg>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/bhawesh-panwar-b43048360/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex aspect-square cursor-pointer items-center justify-center rounded-full size-10 hover:bg-neutral-100 dark:hover:bg-neutral-700 transition-colors"
+          title="LinkedIn"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="size-4 fill-current"
+          >
+            <path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+            ></path>
+          </svg>
+        </a>
+        <a
+          href="https://x.com/_bhaweshpanwar"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex aspect-square cursor-pointer items-center justify-center rounded-full size-10 hover:bg-neutral-100 dark:hover:bg-neutral-700 transition-colors"
+          title="X (Twitter)"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="size-[14px] fill-current"
+          >
+            <path
+              d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"
+            ></path>
+          </svg>
+        </a>
+
+        <div
+          class="shrink-0 bg-neutral-300 dark:bg-neutral-600 w-[1px] h-6 mx-1.5"
+        ></div>
+
+        <button
+          id="theme-toggle"
+          class="flex aspect-square cursor-pointer items-center justify-center rounded-full size-10 hover:bg-neutral-100 dark:hover:bg-neutral-700 transition-colors"
+          title="Toggle theme"
+        >
+          <svg
+            id="theme-toggle-sun"
+            width="18"
+            height="18"
+            viewBox="0 0 15 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="text-neutral-800 dark:hidden"
+          >
+            <path
+              d="M7.5 0C7.77614 0 8 0.223858 8 0.5V2.5C8 2.77614 7.77614 3 7.5 3C7.22386 3 7 2.77614 7 2.5V0.5C7 0.223858 7.22386 0 7.5 0ZM2.1967 2.1967C2.39196 2.00144 2.70854 2.00144 2.90381 2.1967L4.31802 3.61091C4.51328 3.80617 4.51328 4.12276 4.31802 4.31802C4.12276 4.51328 3.80617 4.51328 3.61091 4.31802L2.1967 2.90381C2.00144 2.70854 2.00144 2.39196 2.1967 2.1967ZM0.5 7C0.223858 7 0 7.22386 0 7.5C0 7.77614 0.223858 8 0.5 8H2.5C2.77614 8 3 7.77614 3 7.5C3 7.22386 2.77614 7 2.5 7H0.5ZM2.1967 12.8033C2.00144 12.608 2.00144 12.2915 2.1967 12.0962L3.61091 10.682C3.80617 10.4867 4.12276 10.4867 4.31802 10.682C4.51328 10.8772 4.51328 11.1938 4.31802 11.3891L2.90381 12.8033C2.70854 12.9986 2.39196 12.9986 2.1967 12.8033ZM12.5 7C12.2239 7 12 7.22386 12 7.5C12 7.77614 12.2239 8 12.5 8H14.5C14.7761 8 15 7.77614 15 7.5C15 7.22386 14.7761 7 14.5 7H12.5ZM10.682 4.31802C10.4867 4.12276 10.4867 3.80617 10.682 3.61091L12.0962 2.1967C12.2915 2.00144 12.608 2.00144 12.8033 2.1967C12.9986 2.39196 12.9986 2.70854 12.8033 2.90381L11.3891 4.31802C11.1938 4.51328 10.8772 4.51328 10.682 4.31802ZM8 12.5C8 12.2239 7.77614 12 7.5 12C7.22386 12 7 12.2239 7 12.5V14.5C7 14.7761 7.22386 15 7.5 15C7.77614 15 8 14.7761 8 14.5V12.5ZM10.682 10.682C10.8772 10.4867 11.1938 10.4867 11.3891 10.682L12.8033 12.0962C12.9986 12.2915 12.9986 12.608 12.8033 12.8033C12.608 12.9986 12.2915 12.9986 12.0962 12.8033L10.682 11.3891C10.4867 11.1938 10.4867 10.8772 10.682 10.682ZM5.5 7.5C5.5 6.39543 6.39543 5.5 7.5 5.5C8.60457 5.5 9.5 6.39543 9.5 7.5C9.5 8.60457 8.60457 9.5 7.5 9.5C6.39543 9.5 5.5 8.60457 5.5 7.5ZM7.5 4.5C5.84315 4.5 4.5 5.84315 4.5 7.5C4.5 9.15685 5.84315 10.5 7.5 10.5C9.15685 10.5 10.5 9.15685 10.5 7.5C10.5 5.84315 9.15685 4.5 7.5 4.5Z"
+              fill="currentColor"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+          <svg
+            id="theme-toggle-moon"
+            width="18"
+            height="18"
+            viewBox="0 0 15 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="hidden text-neutral-200 dark:block"
+          >
+            <path
+              d="M2.89998 0.499976C2.89998 0.279062 2.72089 0.0999756 2.49998 0.0999756C2.27906 0.0999756 2.09998 0.279062 2.09998 0.499976V1.09998H1.49998C1.27906 1.09998 1.09998 1.27906 1.09998 1.49998C1.09998 1.72089 1.27906 1.89998 1.49998 1.89998H2.09998V2.49998C2.09998 2.72089 2.27906 2.89998 2.49998 2.89998C2.72089 2.89998 2.89998 2.72089 2.89998 2.49998V1.89998H3.49998C3.72089 1.89998 3.89998 1.72089 3.89998 1.49998C3.89998 1.27906 3.72089 1.09998 3.49998 1.09998H2.89998V0.499976ZM5.89998 3.49998C5.89998 3.27906 5.72089 3.09998 5.49998 3.09998C5.27906 3.09998 5.09998 3.27906 5.09998 3.49998V4.09998H4.49998C4.27906 4.09998 4.09998 4.27906 4.09998 4.49998C4.09998 4.72089 4.27906 4.89998 4.49998 4.89998H5.09998V5.49998C5.09998 5.72089 5.27906 5.89998 5.49998 5.89998C5.72089 5.89998 5.89998 5.72089 5.89998 5.49998V4.89998H6.49998C6.72089 4.89998 6.89998 4.72089 6.89998 4.49998C6.89998 4.27906 6.72089 4.09998 6.49998 4.09998H5.89998V3.49998ZM1.89998 6.49998C1.89998 6.27906 1.72089 6.09998 1.49998 6.09998C1.27906 6.09998 1.09998 6.27906 1.09998 6.49998V7.09998H0.499976C0.279062 7.09998 0.0999756 7.27906 0.0999756 7.49998C0.0999756 7.72089 0.279062 7.89998 0.499976 7.89998H1.09998V8.49998C1.09998 8.72089 1.27906 8.89997 1.49998 8.89997C1.72089 8.89997 1.89998 8.72089 1.89998 8.49998V7.89998H2.49998C2.72089 7.89998 2.89998 7.72089 2.89998 7.49998C2.89998 7.27906 2.72089 7.09998 2.49998 7.09998H1.89998V6.49998ZM8.54406 0.98184L8.24618 0.941586C8.03275 0.917676 7.90692 1.1655 8.02936 1.34194C8.17013 1.54479 8.29981 1.75592 8.41754 1.97445C8.91878 2.90485 9.20322 3.96932 9.20322 5.10022C9.20322 8.37201 6.82247 11.0878 3.69887 11.6097C3.45736 11.65 3.20988 11.6772 2.96008 11.6906C2.74563 11.702 2.62729 11.9535 2.77721 12.1072C2.84551 12.1773 2.91535 12.2458 2.98667 12.3128L3.05883 12.3795L3.31883 12.6045L3.50684 12.7532L3.62796 12.8433L3.81491 12.9742L3.99079 13.089C4.11175 13.1651 4.23536 13.2375 4.36157 13.3059L4.62496 13.4412L4.88553 13.5607L5.18837 13.6828L5.43169 13.7686C5.56564 13.8128 5.70149 13.8529 5.83857 13.8885C5.94262 13.9155 6.04767 13.9401 6.15405 13.9622C6.27993 13.9883 6.40713 14.0109 6.53544 14.0298L6.85241 14.0685L7.11934 14.0892C7.24637 14.0965 7.37436 14.1002 7.50322 14.1002C11.1483 14.1002 14.1032 11.1453 14.1032 7.50023C14.1032 7.25044 14.0893 7.00389 14.0623 6.76131L14.0255 6.48407C13.991 6.26083 13.9453 6.04129 13.8891 5.82642C13.8213 5.56709 13.7382 5.31398 13.6409 5.06881L13.5279 4.80132L13.4507 4.63542L13.3766 4.48666C13.2178 4.17773 13.0353 3.88295 12.8312 3.60423L12.6782 3.40352L12.4793 3.16432L12.3157 2.98361L12.1961 2.85951L12.0355 2.70246L11.8134 2.50184L11.4925 2.24191L11.2483 2.06498L10.9562 1.87446L10.6346 1.68894L10.3073 1.52378L10.1938 1.47176L9.95488 1.3706L9.67791 1.2669L9.42566 1.1846L9.10075 1.09489L8.83599 1.03486L8.54406 0.98184ZM10.4032 5.30023C10.4032 4.27588 10.2002 3.29829 9.83244 2.40604C11.7623 3.28995 13.1032 5.23862 13.1032 7.50023C13.1032 10.593 10.596 13.1002 7.50322 13.1002C6.63646 13.1002 5.81597 12.9036 5.08355 12.5522C6.5419 12.0941 7.81081 11.2082 8.74322 10.0416C8.87963 10.2284 9.10028 10.3497 9.34928 10.3497C9.76349 10.3497 10.0993 10.0139 10.0993 9.59971C10.0993 9.24256 9.84965 8.94373 9.51535 8.86816C9.57741 8.75165 9.63653 8.63334 9.6926 8.51332C9.88358 8.63163 10.1088 8.69993 10.35 8.69993C11.0403 8.69993 11.6 8.14028 11.6 7.44993C11.6 6.75976 11.0406 6.20024 10.3505 6.19993C10.3853 5.90487 10.4032 5.60464 10.4032 5.30023Z"
+              fill="currentColor"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script>
+      const themeToggleBtn = document.getElementById('theme-toggle');
+      const sunIcon = document.getElementById('theme-toggle-sun');
+      const moonIcon = document.getElementById('theme-toggle-moon');
+
+      function updateIconVisibility() {
+        if (document.documentElement.classList.contains('dark')) {
+          sunIcon.classList.add('hidden');
+          moonIcon.classList.remove('hidden');
+        } else {
+          sunIcon.classList.remove('hidden');
+          moonIcon.classList.add('hidden');
+        }
+      }
+
+      document.addEventListener('DOMContentLoaded', function () {
+        updateIconVisibility();
+      });
+
+      updateIconVisibility();
+
+      themeToggleBtn.addEventListener('click', () => {
+        const html = document.documentElement;
+        let newTheme;
+
+        if (html.classList.contains('dark')) {
+          html.classList.remove('dark');
+          newTheme = 'light';
+        } else {
+          html.classList.add('dark');
+          newTheme = 'dark';
+        }
+
+        localStorage.setItem('theme', newTheme);
+
+        updateIconVisibility();
+      });
+    </script>
+  </body>
+</html>
